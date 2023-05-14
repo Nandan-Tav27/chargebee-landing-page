@@ -1,15 +1,74 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+main {
+    background: linear-gradient(111.5deg, #4300a3 -8.29%, #6100bb 60.07%, #a700f1 135.94%);
+    padding-bottom: 120px;
+}
+
 nav {
     display: flex;
-    border: 1px solid red;
     padding: 0px 30px;
     gap: 2rem;
     align-items: center;
     font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    margin-bottom: 20px;
 }
 
 nav>* {
-    border: 1px solid black;
     flex: 1;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 #nav-2 {
@@ -20,12 +79,106 @@ nav>* {
 #nav-3 {
     display: flex;
     flex-basis: 30%;
+    justify-content: flex-end;
 }
 
 #icon {
     flex-basis: 10%;
+    margin-top: 10px;
 }
 
 img {
-    width: 100%;
+    width: 110px;
+    height: 34px;
+}
+
+#nav-2>* {
+    padding: 24px 12px;
+}
+
+#nav-3>*:nth-child(1) {
+    padding: 24px 12px;
+}
+
+#nav-3>*:nth-child(2) {
+    padding: 24px 30px 24px 12px;
+}
+
+#nav-3>*:nth-child(3) {
+    margin: 12px 6px 12px 2px;
+    padding: 12px 6px 12px 6px;
+    border: 1px solid white;
+}
+
+#icon {
+    padding: 18px 12px;
+    align-self: center;
+}
+
+#language-icon {
+    width: 14px;
+    height: 14px;
+    padding-right: 4px;
+}
+
+#lock-icon {
+    width: 14px;
+    height: 14px;
+    padding-right: 4px;
+}
+
+.arrow {
+    font-weight: 600;
+}
+
+#hero {
+    display: flex;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 10px 150px 140px 150px;
+    padding: 60px 20px 0px 20px;
+    gap: 70px;
+}
+
+#hero>*:nth-child(1) {
+    flex-basis: 50%;
+}
+
+#hero>*:nth-child(2) {
+    flex-basis: 50%;
+}
+
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    padding: 0px 0px 18px;
+}
+
+#hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0px 0px 48px;
+    line-height: 1.5;
+}
+
+#hero>*:nth-child(1)>a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px 10px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#get-demo {
+    border: 1px solid black;
+    color: #6600BE;
+    background-color: #FF93CF;
+    border-radius: 24.5px;
+    font-weight: 500;
+}
+
+#sign-free {
+    color: white;
+    font-weight: 400;
 }
